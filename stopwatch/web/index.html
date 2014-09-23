@@ -5,15 +5,20 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link ref="imorpt" href="packages/polymer/polymer.html">
+    <link ref="stylesheet" href = "stopwatch.css">
+    <script src="packages/web_components/platform.js"></script>
     <script src="packages/web_components/dart_support.js"></script>
     <link ref="import" href="stopwatch.html">
-    
   </head>
  
   <body>  
     <h1>Stopwatch</h1> 
-    <stopwatch></stopwatch>
+    <tut-stopwatch>
+      <template>
+        
+      </template>
+      <script type="application/dart" src="stopwatch.dart"></script>
+    </tut-stopwatch>
     
     <script type="application/dart">export 'package:polymer/init.dart';</script>
   </body>

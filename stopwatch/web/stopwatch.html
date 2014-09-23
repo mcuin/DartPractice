@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stopwatch</title>
-    <link ref="imorpt" href="packages/polymer/polymer.html">
-    <script async type="application/dart" src="stopwatch.dart"></script>
-    <script async src="packages/browser/dart.js"></script>
-    
-    <link rel="stylesheet" href="stopwatch.css">
-  </head>
-  <body>
-    <h1>Stopwatch</h1>
-    
-    <p>Hello world from Dart!</p>
-    
-    <div id="sample_container_id">
-      <p id="sample_text_id">Click me!</p>
-    </div>
-
-  </body>
-</html>
+<polymer-element name="tut-stopwatch">
+  <template>
+    <style>
+    </style>
+      <div>
+        <div>
+          {{counter}}
+        </div>
+        <div>
+          <button on-click="{{start}}" id="startButton">Start</button>
+          <button on-click="{{stop}}" id="stopButton">Stop</button>
+          <button on-click="{{reset}}" id="resetButton">Reset</button>
+        </div>
+      </div>
+  </template>
+  
+  <script src="application/dart" src="stopwatch.dart"></script>
+</polymer-element>
