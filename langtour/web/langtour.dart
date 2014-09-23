@@ -9,5 +9,8 @@ printNumber(num aNumber){
 void main() {
   var number = 42;
   print(number);
+  
+  int lineCount;
+  assert(lineCount == null);
 }
 
