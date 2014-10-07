@@ -3,3 +3,7 @@ description: A sample web application
 dependencies:
   polymer: ">=0.14.0 <0.15.0"
   browser: any
+transformers:
+- polymer:
+    entry_points: web/index.html
+      

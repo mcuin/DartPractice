@@ -1,11 +1,11 @@
 import 'dart:html';
 import 'package:polymer/polymer.dart';
 
-@CustomTag('tut-stopwatch')
-class TutStopwatch extends PolymerElement {
+@CustomTag('t-stopwatch')
+class Stopwatch extends PolymerElement {
   @observable String counter = '00:00';
   
-  TutStopwatch.created() : super.created();
+  Stopwatch.created() : super.created();
   
   @override
   void attached() {
